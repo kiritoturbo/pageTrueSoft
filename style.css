@@ -511,7 +511,7 @@ ul {
     left: -110px;
     bottom: -44px;
     border: 1px solid #26A891;
-
+    z-index: -1;
 }
 
 .right_contact_footer {
