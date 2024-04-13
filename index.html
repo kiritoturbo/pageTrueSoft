@@ -22,12 +22,20 @@
         <div class="navbar_header">
             <div class="navbar_content container d-flex justify-content-between align-item-center">
                 <div class="navbar_logo">
-                    <img src="./assets/logo-truesoftware.svg" alt="logo truesoftware">
+                    <a href="#">
+                        <img src="./assets/logo-truesoftware.svg" alt="logo truesoftware">
+                    </a>
                 </div>
                 <ul class="navbar_menu">
-                    <li class="navbar_item_menu">Our stories</li>
-                    <li class="navbar_item_menu">Services</li>
-                    <li class="navbar_item_menu">Careers</li>
+                    <li class="navbar_item_menu">
+                        <a href="#">Our stories</a>
+                    </li>
+                    <li class="navbar_item_menu">
+                        <a href="#">Services</a>
+                    </li>
+                    <li class="navbar_item_menu">
+                        <a href="#">Careers</a>
+                    </li>
                 </ul>
                 <div class="navbar_contact">
                     <a href="#" class="navbar_button_contact">
@@ -54,16 +62,18 @@
     <section class="total_project">
         <div class="button_link">
             <div class="btn_arlink container">
-                <a href="#" class="btn_menu_link ">Check our sevices
+                <a href="#" class="btn_menu_link "><span>Check our sevices</span><img
+                        src="./assets/icon_arrow_right.svg" alt="arrow right">
                 </a>
-                <img src="./assets/icon_arrow_right.svg" alt="arrow right">
+
             </div>
         </div>
         <div class="btn_link_project">
             <div class="btn_arlink container ">
-                <a href="#" class="btn_menu_link ">See all projects
+                <a href="#" class="btn_menu_link "><span>See all projects</span><img src="./assets/icon_arrow_right.svg"
+                        alt="arrow right">
                 </a>
-                <img src="./assets/icon_arrow_right.svg" alt="arrow right">
+
             </div>
         </div>
         <div class="total_content container">
@@ -137,29 +147,67 @@
             </div>
         </div>
     </section>
-    <section class="warpper_carousel_body d-flex ">
-        <div class="left_carousel_body">
-            <img src="./assets/img_left_carousel.svg" alt="">
-        </div>
-        <div class="right_carousel_body">
-            <div class="wapper_right_carousel">
-                <span class="title_right_carousel">Think big, Start small</span>
-                <p class="paragraph_right_carousel">
-                    Going beyond ordinary offshore software development that plays the role of cost reduction, we
-                    have a
-                    dream of building the lab for smart software that empowers businesses to thrive digitally.
-                    That’s
-                    why we
-                    named us True Software, which is an abbreviation of Enterprise Lab. We’ve started small, but we
-                    do
-                    little things with great love. How does great love transform into a customer’s credit?
-                </p>
-                <div class="wapper_carousel_dot">
-                    <span class="item_dot_carousel active"></span>
-                    <span class="item_dot_carousel"></span>
-                    <span class="item_dot_carousel"></span>
+    <section class="slidersShow">
+        <div class="warpper_carousel_body fade d-flex ">
+            <div class="left_carousel_body">
+                <img src="./assets/img_left_carousel.svg" alt="">
+            </div>
+            <div class="right_carousel_body">
+                <div class="wapper_right_carousel">
+                    <span class="title_right_carousel">Think big, Start small</span>
+                    <p class="paragraph_right_carousel">
+                        Going beyond ordinary offshore software development that plays the role of cost reduction, we
+                        have a
+                        dream of building the lab for smart software that empowers businesses to thrive digitally.
+                        That’s
+                        why we
+                        named us True Software, which is an abbreviation of Enterprise Lab. We’ve started small, but we
+                        do
+                        little things with great love. How does great love transform into a customer’s credit?
+                    </p>
+
                 </div>
             </div>
+        </div>
+        <div class="warpper_carousel_body fade d-flex ">
+            <div class="left_carousel_body">
+                <img src="./assets/img_left_carousel_2.svg" alt="">
+            </div>
+            <div class="right_carousel_body">
+                <div class="wapper_right_carousel">
+                    <span class="title_right_carousel">Lean and reliable</span>
+                    <p class="paragraph_right_carousel">
+                        We are a lean and agile development team focused on delivering high-quality software. Over the
+                        years of working in the offshore software development industry, we truly understand its pros and
+                        cons. Instead of acquiring as many clients as possible and letting them go with frustration and
+                        poor deliveries, we try our best to establish a long-term relationship based on a strong
+                        commitment to transparency and integrity:
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="warpper_carousel_body fade d-flex ">
+            <div class="left_carousel_body">
+                <img src="./assets/img_left_carousel_3.svg" alt="">
+            </div>
+            <div class="right_carousel_body">
+                <div class="wapper_right_carousel">
+                    <span class="title_right_carousel">Happy customers, happy developers</span>
+                    <p class="paragraph_right_carousel">
+                        Through every project, we strive to deliver diligently, on time to the specs, and with excellent
+                        quality. We hope to be a reliable tech partner, contributing to your success on the road to
+                        digital transformation. In this challenging journey, together, we grow and are happy is the
+                        solid foundation for a long-lasting relationship.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="wapper_carousel_dot">
+            <span class="item_dot_carousel" onclick="currentSlide(1)"></span>
+            <span class="item_dot_carousel" onclick="currentSlide(2)"></span>
+            <span class="item_dot_carousel" onclick="currentSlide(3)"></span>
         </div>
     </section>
     <section class="wapper_truesoft_career">
@@ -246,6 +294,7 @@
             </div>
         </div>
     </section>
+    <script src="./myScript.js"></script>
 </body>
 
 </html>
