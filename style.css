@@ -701,13 +701,17 @@ ul {
     max-width: 100%;
 }
 
+.navbar_header_mobile,
+.navbar_mobile {
+    display: none;
+}
 
 /* reponsive  */
 /* mobile & tablet  */
 @media (max-width:1440px) {}
 
 /* tablet  */
-@media (min-width:425px) and (max-width:768px) {
+@media (max-width:768px) {
     .navbar_content {
         padding: 18px 24px;
     }
@@ -871,4 +875,123 @@ ul {
 }
 
 /* mobile */
-@media (max-width:424px) {}
+@media (max-width:525px) {
+    .navbar_logo {
+        margin-left: 34px;
+    }
+
+    .title_right_carousel,
+    .title_footer {
+        font-size: 24px;
+    }
+
+    .paragraph_right_carousel {
+        font-size: 14px;
+    }
+
+    .left_bottomFooter {
+        font-size: 12px;
+    }
+
+    .content_truesoft_career {
+        padding: 0;
+    }
+
+    .right_contact_footer,
+    .left_contact_footer {
+        padding: 24px;
+    }
+
+    .navbar_header {
+        display: none;
+    }
+
+    .navbar_content {
+        padding: 16px;
+    }
+
+    .navbar_header_mobile {
+        display: block;
+    }
+
+    .navbar_logo {
+        width: auto;
+    }
+
+    .slider_header {
+        height: 468px;
+        background: url("./assets/img_header_mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .slider_title_header {
+        max-width: 279px;
+    }
+
+    .slider_descript_header {
+        padding-left: 16px;
+        bottom: 40px;
+    }
+
+    .total_content {
+        padding: 40px 16px;
+    }
+
+    .wrapper_items_content {
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .content_provide_service {
+        padding: 40px 16px;
+    }
+
+    .left_provide_service {
+        flex-direction: column;
+    }
+
+    .left_provide_service li {
+        width: 100%;
+    }
+
+    .warpper_carousel_body {
+        flex-direction: column-reverse;
+    }
+
+    .right_provide_service img {
+        height: 202px;
+    }
+
+    .left_carousel_body,
+    .right_carousel_body {
+        width: 100%;
+    }
+
+    .left_carousel_body {
+        height: 219px;
+    }
+
+    .body_first_text {
+        font-size: 18px;
+    }
+
+    .body_paragraph {
+        font-size: 14px;
+    }
+
+    .group_truesoft_content {
+        width: 355px;
+        padding: 0 16px;
+    }
+
+    .body_group_content {
+        width: 100%;
+    }
+
+    .body_paragraph {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+}
