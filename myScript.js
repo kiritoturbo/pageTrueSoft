@@ -46,3 +46,20 @@ sliders.forEach((slider) => {
     slideInterval = setInterval(autoSlide, 3000);
   };
 });
+
+// menu mobile
+let NavbarMobile = document.querySelector(".navbar_mobile");
+let OverLay = document.querySelector(".overlay");
+let IconMenuMobile = document.querySelector(".navbar_menu_icon");
+let bodyHTML = document.querySelector("body");
+
+IconMenuMobile.addEventListener("click", function () {
+  OverLay.style.display = "block";
+  NavbarMobile.style.left = "0";
+  bodyHTML.style.overflow = "hidden";
+});
+OverLay.addEventListener("click", function () {
+  NavbarMobile.style.left = "-100%";
+  OverLay.style.display = "none";
+  bodyHTML.style.overflow = "auto";
+});

@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <div class="overlay"></div>
     <section class="navbar_mobile">
         <ul class="navbar_menu">
             <li class="navbar_item_menu">
@@ -27,9 +28,17 @@
                 <a href="#">Services</a>
             </li>
             <li class="navbar_item_menu">
+                <a href="#">Projects</a>
+            </li>
+            <li class="navbar_item_menu">
                 <a href="#">Careers</a>
             </li>
         </ul>
+        <div class="navbar_contact">
+            <a href="#" class="navbar_button_contact">
+                Contact Us
+            </a>
+        </div>
     </section>
     <section class="wrapper_header">
         <div class="navbar_header">
@@ -47,6 +56,9 @@
                         <a href="#">Services</a>
                     </li>
                     <li class="navbar_item_menu">
+                        <a href="#">Projects</a>
+                    </li>
+                    <li class="navbar_item_menu">
                         <a href="#">Careers</a>
                     </li>
                 </ul>
@@ -59,22 +71,17 @@
         </div>
         <div class="navbar_header_mobile">
             <div class="navbar_content container d-flex justify-content-between align-item-center">
+                <div class="navbar_logo">
+                    <a href="#">
+                        <img src="./assets/logo-truesoftware.svg" alt="logo truesoftware">
+                    </a>
+                </div>
                 <div class="navbar_menu_icon">
                     <a href="#">
                         <img src="./assets/icon_menu_responsive.svg" alt="menu icon" sizes="" srcset="">
                     </a>
                 </div>
-                <div class="navbar_logo">
-                    <a href="#">
-                        <img src="./assets/logo_truesoftware_mobile.svg" alt="logo truesoftware">
-                    </a>
-                </div>
 
-                <div class="navbar_contact">
-                    <a href="#" class="navbar_button_contact">
-                        Contact Us
-                    </a>
-                </div>
             </div>
         </div>
         <div class="slider_header">
@@ -130,56 +137,6 @@
             </div>
         </div>
     </section>
-    <section class="wrapper_provide_service">
-        <div class="content_provide_service container">
-            <h3 class="title_provide_service">We provide
-                the best services</h3>
-            <div class="off_provide_service d-flex">
-                <ul class="left_provide_service ">
-                    <li>
-                        <a href="#" class="item_provide_service">
-                            <img class="icon_item_service" src="./assets/icon_custom_software.svg"
-                                alt="icon custom software">
-                            <p class="decript_item_service">Custom Software</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="item_provide_service">
-                            <img class="icon_item_service" src="./assets/icon_app_develop.svg"
-                                alt="icon custom software">
-                            <p class="decript_item_service">App Development</p>
-
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="item_provide_service">
-                            <img class="icon_item_service" src="./assets/icon_app_develop.svg"
-                                alt="icon custom software">
-                            <p class="decript_item_service">Web Development</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="item_provide_service">
-                            <img class="icon_item_service" src="./assets/icon_game_develop.svg"
-                                alt="icon custom software">
-                            <p class="decript_item_service">Game Development</p>
-                        </a>
-
-                    </li>
-                    <li>
-                        <a href="#" class="item_provide_service">
-                            <img class="icon_item_service" src="./assets/icon_uxui_develop.svg"
-                                alt="icon custom software">
-                            <p class="decript_item_service">UI/UX Design</p>
-                        </a>
-                    </li>
-                </ul>
-                <div class="right_provide_service">
-                    <img src="./assets/img_right_provide.svg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="slidersShow">
         <div class="warpper_carousel_body fade d-flex ">
             <div class="left_carousel_body">
@@ -228,9 +185,9 @@
                 <div class="wapper_right_carousel">
                     <span class="title_right_carousel">Happy customers, happy developers</span>
                     <p class="paragraph_right_carousel">
-                        Through every project, we strive to deliver diligently, on time to the specs, and with excellent
+                        Through every project, we strive to deliver diligently, on time tothe specs, and with excellent
                         quality. We hope to be a reliable tech partner, contributing to your success on the road to
-                        digital transformation. In this challenging journey, together, we grow and are happy is the
+                        digitaltransformation. In this challenging journey, together, we grow and are happy is the
                         solid foundation for a long-lasting relationship.
                     </p>
 
@@ -241,6 +198,56 @@
             <span class="item_dot_carousel" onclick="currentSlide(1)"></span>
             <span class="item_dot_carousel" onclick="currentSlide(2)"></span>
             <span class="item_dot_carousel" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+    <section class="wrapper_provide_service">
+        <div class="content_provide_service container">
+            <h3 class="title_provide_service">We provide
+                the best services</h3>
+            <div class="off_provide_service d-flex">
+                <ul class="left_provide_service ">
+                    <li>
+                        <a href="#" class="item_provide_service">
+                            <img class="icon_item_service" src="./assets/icon_custom_software.svg"
+                                alt="icon custom software">
+                            <p class="decript_item_service">Custom Software</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item_provide_service">
+                            <img class="icon_item_service" src="./assets/icon_app_develop.svg"
+                                alt="icon custom software">
+                            <p class="decript_item_service">App Development</p>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item_provide_service">
+                            <img class="icon_item_service" src="./assets/icon_app_develop.svg"
+                                alt="icon custom software">
+                            <p class="decript_item_service">Web Development</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item_provide_service">
+                            <img class="icon_item_service" src="./assets/icon_game_develop.svg"
+                                alt="icon custom software">
+                            <p class="decript_item_service">Game Development</p>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#" class="item_provide_service">
+                            <img class="icon_item_service" src="./assets/icon_uxui_develop.svg"
+                                alt="icon custom software">
+                            <p class="decript_item_service">UI/UX Design</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="right_provide_service">
+                    <img src="./assets/img_right_provide.svg" alt="">
+                </div>
+            </div>
         </div>
     </section>
     <section class="wapper_truesoft_career">

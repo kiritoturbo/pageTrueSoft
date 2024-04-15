@@ -28,6 +28,17 @@ ul {
     max-width: 100%;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+    display: none;
+}
 
 /* postion  */
 
@@ -178,6 +189,20 @@ ul {
     font-weight: 700;
     line-height: normal;
     margin-bottom: 28px;
+}
+
+.slider_header {
+    margin-top: 81px;
+}
+
+.navbar_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
 }
 
 /* .item_content {
@@ -392,7 +417,8 @@ ul {
 
 .content_truesoft_career {
     padding: 0 60px;
-    margin-top: 163px;
+    /* margin-top: 163px; */
+    margin-top: calc(178px /2);
 }
 
 .box_truesoft_career {
@@ -581,7 +607,8 @@ ul {
     width: 537px;
     padding: 40px;
     background: #FFF;
-    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+    /* box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10); */
+    border: 1px solid #CCC;
     margin-left: 22px;
 }
 
@@ -832,7 +859,8 @@ ul {
 
     .content_truesoft_career {
         padding: 0 24px;
-        margin-top: 144px;
+        /* margin-top: 144px; */
+        margin-top: calc(150px /2);
     }
 
     .group_truesoft_content {
@@ -876,8 +904,41 @@ ul {
 
 /* mobile */
 @media (max-width:525px) {
-    .navbar_logo {
+    .navbar_header_mobile {
+        position: fixed;
+        z-index: 10;
+        background: #fff;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    /* .navbar_logo {
         margin-left: 34px;
+    } */
+    .navbar_mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        z-index: 1000;
+        width: 65%;
+        height: 100%;
+        padding: 40px;
+        background: #FFF;
+        box-shadow: 4px 0px 10px 0px rgba(0, 0, 0, 0.15);
+        transition: left 0.3s ease-in-out;
+    }
+
+    .navbar_mobile .navbar_menu {
+        flex-direction: column;
+        align-items: start;
+        height: auto;
+        gap: 28px;
     }
 
     .title_right_carousel,
@@ -923,6 +984,7 @@ ul {
         background: url("./assets/img_header_mobile.svg");
         background-repeat: no-repeat;
         background-size: cover;
+        margin-top: 67px;
     }
 
     .slider_title_header {
