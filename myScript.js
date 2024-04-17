@@ -19,21 +19,23 @@ function showSlides(n) {
   if (n < 1) {
     slideIndex = slides.length;
   }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  if (slides.length !== 0 && dots.length !== 0) {
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "flex";
+    dots[slideIndex - 1].className += " active";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "flex";
-  dots[slideIndex - 1].className += " active";
 }
 // Hàm tự động chạy slider sau mỗi khoảng thời gian
 function autoSlide() {
   plusSlides(1); // Tăng slideIndex lên 1 để chuyển đến slide tiếp theo
 }
 
-let slideInterval = setInterval(autoSlide, 3000);
+let slideInterval = setInterval(autoSlide, 100000);
 
 let sliders = document.querySelectorAll(".warpper_carousel_body");
 
@@ -53,7 +55,8 @@ let OverLay = document.querySelector(".overlay");
 let IconMenuMobile = document.querySelector(".navbar_menu_icon");
 let bodyHTML = document.querySelector("body");
 
-IconMenuMobile.addEventListener("click", function () {
+IconMenuMobile.addEventListener("click", function (e) {
+  e.preventDefault();
   OverLay.style.display = "block";
   NavbarMobile.style.left = "0";
   bodyHTML.style.overflow = "hidden";
